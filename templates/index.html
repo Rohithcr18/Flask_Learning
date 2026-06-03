@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to Flask</h1>
+    {% for x in content %}
+        
+        <p>{{x}}</p>
+        {% if x == "cr" %}
+        <p>cr</p>
+        {%else %}
+        <p>Not cr</p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
